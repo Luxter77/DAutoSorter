@@ -1,0 +1,17 @@
+[package]
+name = "DAutoSorter"
+authors = ["Luxter77"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+glob = "0.3.0"
+dirs = "4.0.0"
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1.12"
+
+[package.metadata.winres]
+OriginalFilename = "DAutoSorter.exe"
+FileDescription = "Sorting stuff is hard when you download a gazillion things a day..."
+LegalCopyright = "Luxter77 - 2022"
