@@ -1,4 +1,6 @@
 #![allow(non_snake_case)]
+#![windows_subsystem = "windows"]
+
 fn main() {
     let target = dirs::download_dir().expect("Can't find Download folder :(");
     let mut fcount = 0;
@@ -27,5 +29,5 @@ fn main() {
         fcount += 1;
         println!("Moved from [{:?}] to [{:?}]", file.display(), this_actual_target.display());
     }
-    println!("\nMoved {:?} files.", fcount);
+    println!("Moved {:?} files.", fcount);
 }
