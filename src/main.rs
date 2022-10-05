@@ -2,7 +2,8 @@
 #![windows_subsystem = "windows"]
 
 fn main() {
-    let target = dirs::download_dir().expect("Can't find Download folder :(");
+    // let target = dirs::download_dir().expect("Can't find Download folder :(");
+    let target = std::path::PathBuf::from("D:\\");
     let mut fcount = 0;
     for file in glob::glob(target.clone().join("*.*").as_os_str().to_str().unwrap()).unwrap() {
         let file = file.expect("File ERRORR  AGFAIEGHEIGHG");
