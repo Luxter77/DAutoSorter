@@ -1,6 +1,6 @@
 # DAutoSorter
 
-## It moves stuff around 
+It moves stuff around 
 
 This is a utility program that helps the user to sort and manage their downloaded files more easily.
 
